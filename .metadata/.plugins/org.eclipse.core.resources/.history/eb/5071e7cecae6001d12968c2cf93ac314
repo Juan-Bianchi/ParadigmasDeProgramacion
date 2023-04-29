@@ -1,0 +1,61 @@
+package unlam.paradigmas.objetos.ej06;
+
+class Cerradura {
+	
+	private int clave;
+	private int cantFallos;
+	private boolean fueBloqueada = false;
+	private int cantApExitosas = 0;
+	private int cantApFallidas = 0;
+	
+    public Cerradura(int claveDeApertura,int cantidadDeFallosConsecutivosQueLaBloquean) {
+    	if(claveDeApertura < 0 || cantidadDeFallosConsecutivosQueLaBloquean < 0) {
+    		throw new ValorNegativoException();
+    	}
+    	this.cantFallos = cantidadDeFallosConsecutivosQueLaBloquean;
+    	this.clave = claveDeApertura;
+    }
+    
+    public boolean abrir(int clave) {
+    	if(clave < 0) {
+    		throw new ValorNegativoException();
+    	}
+    	boolean iguales = clave == this.clave;
+    	if(iguales) {
+    		this.cantApFallidas = 0;
+    		this.cantApExitosas ++;
+    	}
+    	else {	
+    		this.cantApFallidas ++;
+    		if(this.cantApFallidas >= this.cantFallos) {
+    			this.cerrar();
+    		}
+    	}
+    	return iguales;
+    }
+    
+    public void cerrar() {
+    	this.fueBloqueada = true;
+    }
+    
+    
+    public boolean estaAbierta() {
+    	return this.clave != -1;
+    }
+    
+    public boolean estaCerrada() {
+    	return this.clave == -1;
+    }
+    
+    public boolean fueBloqueada() {
+    	return this.fueBloqueada;
+    }
+    
+    public int contarAperturasExitosas() {
+    	return this.cantApExitosas;
+    }
+    
+    public int contarAperturasFallidas() {
+    	return this.cantApFallidas;
+    }
+}

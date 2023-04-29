@@ -1,0 +1,8 @@
+package unlam.paradigmas.objetos.ej05;
+
+public class SaldoException extends RuntimeException{
+	public SaldoException() {
+		super();
+	}
+
+}

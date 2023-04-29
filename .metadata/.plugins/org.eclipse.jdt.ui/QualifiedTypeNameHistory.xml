@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej01.NotaException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej02.CoordenadasException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej01.CirculoTests"/>
+    <fullyQualifiedTypeName name="java.lang.Number"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.AreaException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.RadioException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.DiametroException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.PerimetroException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej04.VolumenException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej04.LadoException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej04.AreaException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.SaldoException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.valorNegativoException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.TarjetaBaja"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej06.ValorNegativoException"/>
+    <fullyQualifiedTypeName name="junit.framework.Assert"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+</qualifiedTypeNameHistroy>

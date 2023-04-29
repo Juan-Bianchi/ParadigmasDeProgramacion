@@ -1,0 +1,30 @@
+package unlam.paradigmas.objetos.ej03;
+
+
+import org.junit.Assert;
+import org.junit.Test;
+
+public class CirculoTests {
+	
+	private final double tolerancia = 0.0001;
+	
+	@Test(expected = RadioException.class)
+	public void radioNegativo() {
+		//Arrange
+		Circulo circulo = new Circulo(-0.1);
+		
+	}
+
+	@Test
+	public void obtieneRadioOk() {
+		//Arrange
+		double esperado = Math.random() * 9 + 1;
+		Circulo circulo = new Circulo(esperado);
+		//Act
+		double obtenido = circulo.getRadio();
+		//Assert
+		Assert.assertEquals(esperado, obtenido, tolerancia);
+		//Annihilate
+	}
+
+}

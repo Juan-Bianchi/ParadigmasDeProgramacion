@@ -1,0 +1,16 @@
+package unlam.paradigmas.objetos.ej05;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TarjetaBajaTests {
+	
+	private final double tolerancia = 0.001;
+
+	@Test(expected = valorNegativoException.class)
+	public void test() {
+		
+	}
+
+}

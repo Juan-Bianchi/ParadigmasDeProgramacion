@@ -1,0 +1,7 @@
+package unlam.paradigmas.objetos.ej02;
+
+public class CoordenadasException extends RuntimeException {
+	public CoordenadasException() {
+		super();
+	}
+}

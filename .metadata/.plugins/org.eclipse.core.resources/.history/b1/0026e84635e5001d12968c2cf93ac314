@@ -1,0 +1,13 @@
+package unlam.paradigmas.objetos.ej03;
+
+
+import org.junit.Test;
+
+public class CirculoTests {
+
+	@Test
+	public void test() {
+		
+	}
+
+}

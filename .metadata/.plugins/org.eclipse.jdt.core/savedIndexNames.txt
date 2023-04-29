@@ -1,0 +1,5 @@
+INDEX VERSION 1.132+C:\Users\Juan\Desktop\CODIFICACIONES-PROGRA1\ParadigmasDeProgramacion\.metadata\.plugins\org.eclipse.jdt.core
+3477768142.index
+317152438.index
+2842755183.index
+1865797976.index
