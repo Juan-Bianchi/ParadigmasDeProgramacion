@@ -2,7 +2,9 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class EntradaSalida {
@@ -19,7 +21,7 @@ public class EntradaSalida {
 		//Scanner
 		//leerArchivosConScanner("entrada.in");
 		//System.out.println("La suma es : " + leerArchivoConScanner("numerosenteros.in"));
-		leerArchivoPrueba("Prueba.in");
+		//leerArchivoPrueba("Prueba.in");
 		
 		//FileWriter, PrintWriter
 		//escrituraDeArchivo("salida.out");
@@ -115,5 +117,26 @@ public class EntradaSalida {
 			System.out.println("Número: " + nro + ", caracter: " + caracter);
 		}
 	}
+	
+	/////////////////////////////////
+	
+	public static void escrituraDeArchivo(String nombreArchivo) throws IOException {
+		
+		FileWriter archivo = new FileWriter(RUTA_ARCHIVO_OUT + nombreArchivo);
+		PrintWriter pw = new PrintWriter(archivo);
+		
+		System.out.println("Ingrese un número entero (0 para finalizar): ");
+		Scanner dato = new Scanner(System.in);
+		int numero = dato.nextInt();
+		
+		while(numero != 0) {
+			pw.println(numero);
+			System.out.println("Ingrese un número entero (0 para finalizar): ");
+			numero = dato.nextInt();
+		}
+		
+		archivo.close();
+	}
+	
 
 }
