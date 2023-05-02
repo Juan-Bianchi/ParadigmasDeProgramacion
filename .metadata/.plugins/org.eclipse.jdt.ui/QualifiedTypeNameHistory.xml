@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
-    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej01.NotaException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej02.CoordenadasException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej01.CirculoTests"/>
     <fullyQualifiedTypeName name="java.lang.Number"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.AreaException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.RadioException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej03.DiametroException"/>
@@ -21,6 +19,30 @@
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.SaldoInsuficienteException"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej06.ValorNegativoException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej01.Resolucion"/>
+    <fullyQualifiedTypeName name="java.nio.file.Files"/>
+    <fullyQualifiedTypeName name="java.nio.file.Paths"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej02.Archivo"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej02.Resolucion"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="junit.framework.Assert"/>
     <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej03.Resolucion"/>
 </qualifiedTypeNameHistroy>
