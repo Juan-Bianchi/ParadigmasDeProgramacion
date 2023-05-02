@@ -45,4 +45,8 @@
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej03.Resolucion"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.basicas.ej01.Rango"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
 </qualifiedTypeNameHistroy>
