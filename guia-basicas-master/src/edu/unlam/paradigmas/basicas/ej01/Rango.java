@@ -9,7 +9,11 @@ public class Rango {
 	private final double inicio;
 	private final double fin;
 	
-	private Rango(boolean abiertoADer, boolean abiertoAIzq, double inicio, double fin) {
+	
+	private Rango(boolean abiertoAIzq, boolean abiertoADer, double inicio, double fin) {
+		if(fin < inicio) {
+			throw new LimiteIncorrectoRango();
+		}
 		this.limiteDerAbierto = abiertoADer;
 		this.limiteIzqAbierto = abiertoAIzq;
 		this.inicio = inicio;
@@ -25,15 +29,15 @@ public class Rango {
 	}
 
 
-	public boolean getLimiteIzqAbierto() {
+	private boolean getLimiteIzqAbierto() {
 		return limiteIzqAbierto;
 	}
 
-	public boolean getLimiteDerAbierto() {
+	private boolean getLimiteDerAbierto() {
 		return limiteDerAbierto;
 	}
 
-	public boolean estaDentroDelRango(int numero) {
+	public boolean estaDentroDelRango(double numero) {
 		boolean dentroDelRango;
 		if(numero > this.inicio && numero < fin) {
 			dentroDelRango = true;
@@ -57,6 +61,9 @@ public class Rango {
 		if( rango.getInicio() > this.inicio && rango.getFin() < fin) {
 			dentroDelRango = true;
 		}
+		else if(rango.getInicio() == this.getInicio() && rango.getFin() == this.getFin() && rango.getLimiteDerAbierto() == this.getLimiteDerAbierto() && rango.getLimiteIzqAbierto() == this.getLimiteIzqAbierto()) {
+			dentroDelRango = true;
+		}
 		else if(rango.getInicio() > this.inicio && rango.getFin() == this.fin && ( esCerrado() || esAbiertoAIzquierda()) ){
 			dentroDelRango = true;
 		}
@@ -71,15 +78,35 @@ public class Rango {
 	}
 	
 	public boolean hayInterseccion(Rango rango) {
-		return ( this.getInicio() <= rango.getInicio() && this.getFin() >= rango.getInicio() ) || 
-			   ( this.getInicio() <= rango.getFin() && this.getFin() >= rango.getFin() );
+		boolean hayInterseccion = false;
+		if( this.getInicio() > rango.getInicio() && this.getInicio() < rango.getFin()) {
+			hayInterseccion = true; 
+		}
+		else if(this.getFin() > rango.getInicio() && this.getFin() < rango.getFin()) {
+			hayInterseccion = true;
+		}
+		else if( rango.getInicio() > this.getInicio() && rango.getInicio() < this.getFin()) {
+			hayInterseccion = true; 
+		}
+		else if(rango.getFin() > this.getInicio() && rango.getFin() < this.getFin()) {
+			hayInterseccion = true;
+		}
+
+		else if(this.getInicio() == rango.getInicio() && this.limiteIzqAbierto == rango.limiteIzqAbierto) {
+			hayInterseccion = true;
+		}
+		else if(this.getFin() == rango.getFin() && this.limiteDerAbierto == rango.limiteDerAbierto) {
+			hayInterseccion = true;
+		}
+			
+		return hayInterseccion;
 	}
 	
 	public boolean esIgualRango(Rango rango) {
 		return this.getInicio() == rango.getInicio() && 
 			   this.getFin() == rango.getFin() && 
-			   this.esAbiertoADerecha() == rango.esAbiertoADerecha() && 
-			   this.esAbiertoAIzquierda() == rango.esAbiertoADerecha();
+			   this.getLimiteDerAbierto() == rango.getLimiteDerAbierto() && 
+			   this.getLimiteDerAbierto() == rango.getLimiteIzqAbierto();
 	}
 	
 	public double ordenaRango(Rango rango) {
@@ -111,30 +138,31 @@ public class Rango {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder().append("Rango: ");
-		builder.append(this.esAbiertoAIzquierda()? "(": "[");
+		builder.append(this.esAbiertoAIzquierda() || this.esAbierto()? "(": "[");
 		builder.append(this.inicio);
 		builder.append(", ");
 		builder.append(this.fin);
-		builder.append(this.esAbiertoADerecha()? ")": "]");
+		builder.append(this.esAbiertoADerecha() || this.esAbierto()? ")": "]");
 		
 		return  builder.toString();
 	}
 	
 	
 
-	private boolean esCerrado() {
-		return limiteDerAbierto == limiteIzqAbierto == false;
+	public boolean esCerrado() {
+		boolean cerrado = limiteDerAbierto == false && limiteIzqAbierto == false;
+		return cerrado;
 	}
 	
-	private boolean esAbierto() {
+	public boolean esAbierto() {
 		return limiteDerAbierto == limiteIzqAbierto == true;
 	}
 	
-	private boolean esAbiertoADerecha() {
+	public boolean esAbiertoADerecha() {
 		return limiteDerAbierto == true && limiteIzqAbierto == false;
 	}
 	
-	private boolean esAbiertoAIzquierda() {
+	public boolean esAbiertoAIzquierda() {
 		return limiteDerAbierto == false && limiteIzqAbierto == true;
 	}
 	
@@ -147,11 +175,11 @@ public class Rango {
 	}
 	
 	public static Rango crearRangoAbiertoADerecha(double inicio, double fin) {
-		return new Rango(true, false, inicio, fin);
+		return new Rango(false, true, inicio, fin);
 	}
 	
 	public static Rango crearRangoAbiertoAIzquierda(double inicio, double fin) {
-		return new Rango(false, true, inicio, fin);
+		return new Rango(true, false, inicio, fin);
 	}
 	
 	public static Rango creaRangoMaximo(Collection<Rango> rangos) {
@@ -190,20 +218,20 @@ public class Rango {
 		
 		if(this.hayInterseccion(rango)) {
 			if(rango.getInicio() < this.getInicio() || (rango.getInicio() == this.getInicio() && rango.getLimiteIzqAbierto() && !rango.getLimiteIzqAbierto()) ) {
-				limInf = rango.getInicio();
-				abiertoDer = rango.getLimiteDerAbierto();
-			}
-			else {
 				limInf = this.getInicio();
 				abiertoDer = this.getLimiteDerAbierto();
 			}
-			if(rango.getFin() > this.getFin() || (rango.getFin() == this.getFin() && !rango.getLimiteDerAbierto() && this.getLimiteDerAbierto()) ) {
-				limSup = rango.getFin();
-				abiertoIzq = rango.getLimiteIzqAbierto();
-			}
 			else {
+				limInf = rango.getInicio();
+				abiertoDer = rango.getLimiteDerAbierto();
+			}
+			if(rango.getFin() > this.getFin() || (rango.getFin() == this.getFin() && !rango.getLimiteDerAbierto() && this.getLimiteDerAbierto()) ) {
 				limSup = this.getFin();
 				abiertoIzq = this.getLimiteIzqAbierto();
+			}
+			else {
+				limSup = rango.getFin();
+				abiertoIzq = rango.getLimiteIzqAbierto();
 			}
 		}
 
