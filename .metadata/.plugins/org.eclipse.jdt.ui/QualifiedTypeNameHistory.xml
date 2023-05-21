@@ -17,11 +17,9 @@
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.valorNegativoException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.TarjetaBaja"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej05.SaldoInsuficienteException"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="unlam.paradigmas.objetos.ej06.ValorNegativoException"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej01.Resolucion"/>
     <fullyQualifiedTypeName name="java.nio.file.Files"/>
     <fullyQualifiedTypeName name="java.nio.file.Paths"/>
@@ -32,13 +30,11 @@
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej02.Archivo"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej02.Resolucion"/>
     <fullyQualifiedTypeName name="junit.framework.Assert"/>
-    <fullyQualifiedTypeName name="org.junit.Assert"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.entradasalida.ej03.Resolucion"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.basicas.ej01.Rango"/>
@@ -49,7 +45,19 @@
     <fullyQualifiedTypeName name="java.lang.Object"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="org.junit.Assert"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.basicas.ej01.LimiteIncorrectoRango"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.basicas.ej01.Resolucion"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej02.RaizCuadradaNegativa"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej02.RaizCuadradaNegativaException"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej03.DivisionPorCeroException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej04.CuentaBancaria"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej04.SaldoInsuficienteException"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
