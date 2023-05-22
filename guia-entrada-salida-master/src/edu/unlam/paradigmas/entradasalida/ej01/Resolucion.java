@@ -2,6 +2,8 @@ package edu.unlam.paradigmas.entradasalida.ej01;
 
 import java.util.ArrayList;
 
+import edu.unlam.paradigmas.entradasalida.ej01.Archivo;
+
 public class Resolucion {
 	
 	public void resolver(String nombreArchivo) {
