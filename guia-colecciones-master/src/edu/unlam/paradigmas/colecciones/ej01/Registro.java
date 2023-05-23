@@ -27,4 +27,14 @@ public class Registro {
 		
 		return paquetes;
 	}
+	
+	public Object encontrarPaquetePorNumSeg(int numero) throws Exception{
+		
+		for (Paquete paquete : registro) {
+			if(paquete.getNumeroSeguimiento() == numero) {
+				return paquete;
+			}
+		}
+		return "Paquete no encontrado";
+	}
 }

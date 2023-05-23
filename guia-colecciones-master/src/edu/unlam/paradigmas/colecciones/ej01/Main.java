@@ -18,6 +18,7 @@ public class Main {
 		registro.agregarARegistro(paquete5);
 		
 		System.out.println(registro.mostrarRegistroDePaquetesDeMasDe(13));
+		System.out.println(registro.encontrarPaquetePorNumSeg(5).toString());
 	}
 
 }
