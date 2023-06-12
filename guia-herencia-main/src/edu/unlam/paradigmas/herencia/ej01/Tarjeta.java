@@ -4,6 +4,7 @@ public abstract class Tarjeta {
 	
 	protected String numero;
 	protected Cuenta cuenta;
+	
 
 	protected Tarjeta() {
 		this.numero = String.format("%04d", (int)(Math.random()*9999)) + "-" +
@@ -19,4 +20,7 @@ public abstract class Tarjeta {
 	public Cuenta getCuenta() {
 		return cuenta;
 	}
+	
+
+	
 }

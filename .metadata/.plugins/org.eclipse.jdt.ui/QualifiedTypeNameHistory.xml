@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej04.SaldoInsuficienteException"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej05.CuentaBancaria"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej05.SeteaSaldoNegativoException"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej05.RetiraMontoNegativoException"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej05.DepositaMontoNegativoException"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.excepciones.ej06.FallaEnAperturaDeArchivoException"/>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
-    <fullyQualifiedTypeName name="java.sql.Array"/>
-    <fullyQualifiedTypeName name="java.lang.Number"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.NumeroSeguimientoIncorrectoException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.DireccionErroneaException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.PesoNoValidoException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.Registro"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.Paquete"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.time.Duration"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej02.Venta"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
@@ -31,9 +19,7 @@
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej05.MesErroneoException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej05.ResolucionVentas"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej05.Venta"/>
-    <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej05.EstadisticaVenta"/>
-    <fullyQualifiedTypeName name="java.time.Month"/>
     <fullyQualifiedTypeName name="java.util.HashSet"/>
     <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.NotaFueraDeRangoException"/>
@@ -49,9 +35,7 @@
     <fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej07.Cola"/>
     <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.Character"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej10.Terminal"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej10.ResolucionPrograma"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
@@ -60,4 +44,20 @@
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej08.InversionCola"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Type"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.herencia.ej01.TarjetaCredito"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.herencia.ej01.TipoTransaccion"/>
+    <fullyQualifiedTypeName name="java.time.Year"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.entidades.AtraccionesIterator"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.interfaces.AtraccionIterator"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.interfaces.PromocionIterator"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.entidades.Atraccion"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.entidades.AtraccionesIteratorImplementacion"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.entidades.PromocionesIteratorImplementacion"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

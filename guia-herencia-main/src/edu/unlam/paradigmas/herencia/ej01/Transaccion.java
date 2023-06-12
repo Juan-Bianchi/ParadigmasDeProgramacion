@@ -18,6 +18,10 @@ public class Transaccion {
 		this.fecha = LocalDateTime.now();
 	}
 
+	public TipoTransaccion obtenerTipoTransaccion() {
+		return tipoTransaccion;
+	}
+
 	public double obtenerMonto() {
 		return monto;
 	}
@@ -26,7 +30,7 @@ public class Transaccion {
 		return motivo;
 	}
 
-	public TipoMovimiento obtenerTipo() {
+	public TipoMovimiento obtenerTipoMovimiento() {
 		return tipoMovimiento;
 	}
 	
