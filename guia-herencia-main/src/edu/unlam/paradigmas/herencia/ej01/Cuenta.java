@@ -1,7 +1,12 @@
 package edu.unlam.paradigmas.herencia.ej01;
 
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public abstract class Cuenta {
 
@@ -9,6 +14,7 @@ public abstract class Cuenta {
 	protected List<Transaccion> transacciones = new ArrayList<>();
 	protected TarjetaCredito tarjetaCredito;
 	protected TarjetaDebito tarjetaDebito;
+	protected List<PlazoFijo> plazosFijo = new ArrayList<>();
 	
 	public Cuenta() {
 		this.saldo = 0;
@@ -123,5 +129,47 @@ public abstract class Cuenta {
 		}
 		return tarjetaLibre;
 	}
+	
+	public boolean generarPlazoFijo(PlazoFijo plazoFijo) {
+		boolean plazoFijoValido = movimientoValido(plazoFijo.getMonto()); 
+		if(plazoFijoValido) {
+			this.saldo -= plazoFijo.getMonto();
+			plazosFijo.add(plazoFijo);
+			plazoFijo.setCuenta(this);
+			agendarRetorno(plazoFijo);
+		}
+		return plazoFijoValido;
+	}
+	
+	private void agendarRetorno(PlazoFijo plazoFijo) {
+		final ScheduledExecutorService executor;
+		executor = Executors.newSingleThreadScheduledExecutor();
+		Cuenta cuenta = this;
+		Runnable task = new Runnable() {
+		    @Override
+		    public void run() {
+		        ZonedDateTime now = ZonedDateTime.now();
+		        long delay = now.until(now.plusMonths(1), ChronoUnit.MILLIS);
+
+		        try {
+		            cuenta.saldo += plazoFijo.getMontoFinal();
+		        } finally {
+		            executor.schedule(this, delay, TimeUnit.MILLISECONDS);
+		        }
+		    }
+		};
+
+		int dayOfMonth = 5;
+
+		ZonedDateTime dateTime = ZonedDateTime.now();
+		if (dateTime.getDayOfMonth() >= dayOfMonth) {
+		    dateTime = dateTime.plusMonths(1);
+		}
+		dateTime = dateTime.withDayOfMonth(dayOfMonth);
+		executor.schedule(task,
+		    ZonedDateTime.now().until(dateTime, ChronoUnit.MILLIS),
+		    TimeUnit.MILLISECONDS);
+	}
+
 }
 

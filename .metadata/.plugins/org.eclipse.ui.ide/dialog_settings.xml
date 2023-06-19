@@ -11,8 +11,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\Juan\Desktop\CODIFICACIONES-PROGRA1\TPParadigmas\TurismoArgentino"/>
 			<item value="C:\Users\Juan\Desktop\CODIFICACIONES-PROGRA1\ParadigmasDeProgramacion"/>
+			<item value="C:\Users\Juan\Desktop\CODIFICACIONES-PROGRA1\TPParadigmas\TurismoArgentino"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

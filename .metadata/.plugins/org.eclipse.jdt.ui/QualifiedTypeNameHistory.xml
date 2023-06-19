@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.NumeroSeguimientoIncorrectoException"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.DireccionErroneaException"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.PesoNoValidoException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.Registro"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.Paquete"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -26,7 +23,6 @@
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.Estudiante"/>
-    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.EstudianteNoExistenteException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.EstadisticasEstudiante"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.Resolver"/>
@@ -60,4 +56,8 @@
     <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.herencia.ej01.PlazoFijoErroneoException"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 </qualifiedTypeNameHistroy>
