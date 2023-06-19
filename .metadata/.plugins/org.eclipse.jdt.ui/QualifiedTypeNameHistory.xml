@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.Registro"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej01.Paquete"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="java.time.Duration"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej02.Venta"/>
-    <fullyQualifiedTypeName name="java.time.LocalTime"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej02.VentaServicio"/>
-    <fullyQualifiedTypeName name="java.util.Collection"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
-    <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej04.CrearSetLibros"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej04.Libro"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej04.GestionarTienda"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej05.MesErroneoException"/>
@@ -21,7 +10,6 @@
     <fullyQualifiedTypeName name="java.lang.NoClassDefFoundError"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.NotaFueraDeRangoException"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.Estudiante"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.EstudianteNoExistenteException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.colecciones.ej06.EstadisticasEstudiante"/>
@@ -55,9 +43,21 @@
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.tp.entidades.PromocionesIteratorImplementacion"/>
     <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="edu.unlam.paradigmas.herencia.ej01.PlazoFijoErroneoException"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
     <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej01.Cuadrado"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej01.Figura"/>
+    <fullyQualifiedTypeName name="Rectangulo"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej01.Color"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej01.Rectangulo"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej01.FiguraCompuesta"/>
+    <fullyQualifiedTypeName name="java.io.ByteArrayOutputStream"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej01.CalculoDeTemperas"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej02.TankModeTankState"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej02.TankModeSiegeState"/>
+    <fullyQualifiedTypeName name="edu.unlam.paradigmas.patrones.ej02.GeneracionDeAtaque"/>
 </qualifiedTypeNameHistroy>
