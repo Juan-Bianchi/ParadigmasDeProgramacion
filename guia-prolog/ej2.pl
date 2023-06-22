@@ -19,10 +19,8 @@ bebida(vino).
 bebida(cerveza).
 bebida(agua_mineral).
 
-%Reglas
-menu(Entrada, Principal, Postre, Bebida)
-:-
-    entrada(Entrada), 
-    (   carne(Principal); pescado(Principal)	),
+menu(Entrada, Comida, Postre, Bebida):-
+    entrada(Entrada),
+    (carne(Comida); pescado(Comida)),
     postre(Postre),
     bebida(Bebida).
