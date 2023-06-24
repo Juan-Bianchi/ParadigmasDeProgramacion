@@ -99,6 +99,21 @@ cociente(X,Y,C,R):-
     X >= Y,
     R1 is X - Y,
     cociente(R1,Y,T,R),
-    C is T + 1.
+    C is T + 1. 
+
+euclides(X, 0, X).
+euclides(X, Y, Res):-
+    Y > 0,
+    cociente(X,Y,_,R),
+    euclides(Y,R,Res).
+
+mcd(X,Y,MCD):-
+    euclides(X,Y,MCD).
     
 % 8-Define un predicado mcm(X,Y,M) que signifique "M es el mínimo común múltiplo de X e Y"
+
+mcm(X,Y,MCM):-
+    Producto is X * Y,
+    mcd(X,Y,MCD),
+    MCM is Producto / MCD.
+    
